@@ -6,7 +6,6 @@ import Layout from './pages/Layout/index'
 export default function App() {
   return (
     <div className='app'>
-    <hr />
     <Route path="/" exact render={()=><Redirect to="/home"/>} />
     <Route path="/home" component={Layout}/>
     <Route path="/login" component={Login}/>
